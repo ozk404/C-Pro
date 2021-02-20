@@ -1,4 +1,8 @@
-﻿using System;
+/*
+ Oscar Ernesto Morales Cuellar - 5190-20-6392
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,22 +15,6 @@ namespace Tarea1
         static void Main(string[] args)
         {
             Menu();
-        }
-
-        protected static int origRow;
-        protected static int origCol;
-        protected static void Pos(string s, int x, int y)
-        {
-            try
-            {
-                Console.SetCursorPosition(origCol + x, origRow + y);
-                Console.Write(s);
-            }
-            catch (ArgumentOutOfRangeException e)
-            {
-                Limpiar();
-                Console.WriteLine(e.Message);
-            }
         }
         public static void Limpiar()
         {
